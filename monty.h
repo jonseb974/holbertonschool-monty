@@ -38,4 +38,9 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+/* functions prototypes */
+
+void push(stack_t **stack, unsigned int line_number, char *n);
+void pall(stack_t **stack, unsigned int line_number);
+
 #endif
