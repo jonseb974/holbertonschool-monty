@@ -7,6 +7,7 @@
  * Return : 0
  */
 int main(int ac, char *av[])
+
 {
 	stack_t *stack = NULL;
 	static char *string[1000] = {NULL};
@@ -39,7 +40,7 @@ int main(int ac, char *av[])
  * execute - executes opcodes
  * @string: content of file
  * @stack: the stack
- *
+ * Return : 0
  */
 
 void execute(char *string[], stack_t *stack)
