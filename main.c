@@ -4,7 +4,7 @@
  * main - monty interperter
  * @ac: counter of arguments
  * @av: arguments
- * Return: 0
+ * 
  */
 int main(int ac, char *av[])
 {
@@ -39,7 +39,7 @@ int main(int ac, char *av[])
  * execute - executes opcodes
  * @string: content of file
  * @stack: the stack
- * Return: void
+ *
  */
 
 void execute(char *string[], stack_t *stack)
@@ -49,6 +49,9 @@ void execute(char *string[], stack_t *stack)
 	instruction_t st[] = {
 		{"pall", pall},
 		{"pint", pint},
+		{"add", add},
+		{"swap", swap},
+		{"pop", pop},
 		{"null", NULL}
 	};
 
