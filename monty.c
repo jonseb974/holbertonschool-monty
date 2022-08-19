@@ -49,9 +49,9 @@ void push(stack_t **stack, unsigned int line_num, int n)
 
 /**
  * pint - Prints value at top of stack.
- * @stack: pointer to head of stack
- * @line_num: file's line number
- * Return: Void
+ * @stack: points to the top of the stack
+ * @line_num: line number of the file
+ * 
  */
 void pint(stack_t **stack, unsigned int line_num)
 {
@@ -63,4 +63,29 @@ void pint(stack_t **stack, unsigned int line_num)
 
 	printf("%d\n", (*stack)->n);
 
+}
+
+/**
+ * pop - Removes the top element of the stack
+ * @stack: points to the top of the stack
+ * @line_num: line number of the file
+ *
+ */
+
+void pop(stack_t **stack, unsigned int line_num)
+{
+	stack_t *h = *stack;
+
+	if (!(*stack))
+	{
+		fprintf(stderr, "L%u: can't pop an empty stack\n", line_num);
+		exit(EXIT_FAILURE);
+	}
+
+
+	if (h)
+	{
+		*stack = (h)->next;
+		free(h);
+	}
 }
