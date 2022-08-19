@@ -51,7 +51,7 @@ void push(stack_t **stack, unsigned int line_num, int n)
  * pint - Prints value at top of stack.
  * @stack: points to the top of the stack
  * @line_num: line number of the file
- * 
+ *
  */
 void pint(stack_t **stack, unsigned int line_num)
 {
@@ -94,7 +94,7 @@ void pop(stack_t **stack, unsigned int line_num)
  * swap - Swaps the top two elements
  * @stack: points to the top of the stack
  * @line_num: line number of the file
- * 
+ *
  */
 void swap(stack_t **stack, unsigned int line_num)
 {
