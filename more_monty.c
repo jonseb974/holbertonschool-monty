@@ -4,7 +4,7 @@
  * add - Adds the top two elements of stack
  * @stack: points to the top of the stack
  * @line_num: line number of the file
- * 
+ *
  */
 void add(stack_t **stack, unsigned int line_num)
 {
